@@ -25,6 +25,7 @@ button {
 }
 .navbar {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px;
@@ -81,8 +82,8 @@ button {
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    max-width: 40%;
-    padding: 20px;
+    min-width: 40%;
+    padding: 0px;
 }
 .heroImage {
     display: flex;
@@ -121,7 +122,8 @@ button {
     background-color: #ebeaea;
     border-radius: 10%;
     min-height: 100px;
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     z-index: 1000;
     padding: 20px;
 }
@@ -152,7 +154,8 @@ button {
     justify-self: center;
 }
 .product div {
-    min-width: 30%;
+    width: 100%;
+    max-width: 270px;
     background-color: #ebeaea;
     border-radius: 10%;
     min-height: 250px;
@@ -204,7 +207,7 @@ footer article {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 20%;
+    min-width: 20%;
     margin: 20px;
     color: white;
 }
@@ -225,3 +228,4 @@ footer article ul li a:hover {
     flex-wrap: wrap;
     gap: 10px;
 }
+/*@media(max-width:768)*/
